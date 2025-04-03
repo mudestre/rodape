@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: "Lora", serif;
+}
+footer{
+    background-color: rgb(252, 233, 199);
+    color: white;
+    padding: 35px 0;
+}
+/*tamanho da logotipo*/
+footer .box-line-footer img{
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+/*alinhamento central*/
+footer .line-footer1{
+    text-align: center;
+    border-bottom: 2px solid white; /*adicionar linha para separar, PX referente a expressura da linha*/ 
+    padding-bottom: 35px; /* padding apenas na parte de baixo*/
+}
+.line-footer1 h2{
+    font-size: 2.5rem;
+    font-family: "Lora", serif;
+}
+.line-footer1 p{
+    font-size: 1.4rem;
+    margin: 10px 0 20px 0; /*espaçamento*/
+}
+/*deixa juntos e alinhados no centro*/
+.line-footer1 form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*estilizando email*/
+.line-footer1 form input[type=email]{
+    width: 300px;
+    height: 35px;
+    background: transparent; /*deixando o input transparente*/
+    border: 2px solid white;
+    color: black; /*cor do elemento dentro do input*/
+    padding: 10px; /* espaçamento para os elementos não ficarem grudado na lateral do input*/
+    outline: 0; /*tirar contorno em volta do input*/
+}
+.line-footer1 form input[type=submit]{
+    width: 80px;
+    height: 35px;
+    background-color: orange;
+    border: 0;
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .2s; /*suavizar o cursor quando se trocar a cor*/
+}
+/*mudar a cor do input quando passar o cursor*/
+.line-footer1 form input[type=submit]:hover{
+    background-color: black;
+    color: orange;
+    
+}
+
+footer .line-footer2{
+    padding: 40px 0; /* dando espaçamento entre a logo e a primeira linha de separação*/
+    display: flex;  /*deixando elemetos um do lado do outro*/
+    justify-content: space-between; /*criar espaço igual entre o flex */
+    border-bottom: 2px solid white;
+}
+footer .line-footer2 .box-line-footer{
+    max-width: calc(100% / 5); /*divisão para deixar os espaço entre os elementos iguais*/
+}
+.line-footer2 .box-line-footer h3{
+    color: orange;
+    margin-bottom: 20px; /*criar espaço entre o texto e elementos(somente parte de baixo)*/
+}
+.line-footer2 .box-line-footer a{
+    color:white;
+    display: block; /*deixar os links um abaixo do outro*/
+    margin-bottom: 20px;
+    text-decoration: none; /* tirar sublinhado dos links*/
+    font-size: 1.3rem;
+    transition: .2s;
+}
+.line-footer2 .box-line-footer a:hover{
+    color: black;
+}
+.box-line-footer .btn-redes a{
+    display: inline; /*deixar as redes sociais uma ao lado da outra*/
+}
+.box-line-footer .btn-redes button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /*deixar totalmente redondo*/
+    font-size: 1.2rem; /*aumentar os icones*/
+    background-color: transparent; /*fundo dos icones transparente*/
+    border: 3px solid orange;
+    color: white;
+    cursor: pointer;
+    margin-right: 8px; /* espaço na direita*/
+    transition: .2s;
+}
+/*trocar de cor ao passar cursor*/
+.box-line-footer .btn-redes button:hover{
+    background-color: orange;
+    color: black;
+    border-color: black; /*mudar cor da borda também*/
+}
+.line-footer3{
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 35px; /*parte de cima*/
+    color: white;
+}
